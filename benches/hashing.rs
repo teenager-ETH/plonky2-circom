@@ -35,7 +35,7 @@ pub(crate) fn bench_bn128_poseidon<F: RichField>(c: &mut Criterion) {
 
 fn criterion_benchmark(c: &mut Criterion) {
     bench_gl_poseidon::<GoldilocksField>(c);
-    bench_bn128_poseidon::<GoldilocksField>(c);
+    bench_bn128_poseidon::<Bn128Field>(c);
 }
 
 criterion_group!(benches, criterion_benchmark);
